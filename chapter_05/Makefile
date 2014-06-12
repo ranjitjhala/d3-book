@@ -1,4 +1,4 @@
-TSC=tsc --short-names 
+TSC=tsc
 
 jsObjects   := $(patsubst %.ts,%.js,$(wildcard ./*.ts))
 
@@ -6,5 +6,11 @@ jsObjects   := $(patsubst %.ts,%.js,$(wildcard ./*.ts))
 
 js: $(jsObjects)
 
+clean: 
+	rm *.js
+
 ./%.js: ./%.ts
 	-$(TSC) $?
+
+
+

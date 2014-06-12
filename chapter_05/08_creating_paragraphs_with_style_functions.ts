@@ -16,6 +16,7 @@ d3.select("body")
   .data(dataset)
   .enter()
   .append("p")
-  .text(function(d) { return "Jolly well count up to " + d; })
+  .text(function(d) { return "JoSi p to " + d; })
   .style("color", valColor);	
+
 

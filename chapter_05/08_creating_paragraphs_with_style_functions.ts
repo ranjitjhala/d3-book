@@ -3,7 +3,7 @@
 
 var dataset = [ 5, 10, 15, 20, 25 ];
 	
-function valColor(d){ 
+function dataColor(d:number){ 
   if (d % 10 === 0) {	//Threshold of 15
 	return "red";
   } else {
@@ -16,7 +16,7 @@ d3.select("body")
   .data(dataset)
   .enter()
   .append("p")
-  .text(function(d) { return "JoSi p to " + d; })
-  .style("color", valColor);	
+  .text(function(d) { return "Ha ha ha " + d; })
+  .style("color", dataColor);	
 
 
